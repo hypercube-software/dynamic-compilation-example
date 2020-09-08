@@ -2,10 +2,12 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents** 
 
-- [dynamic compilation in Java](#dynamic-compilation-in-java)
+- [Dynamic compilation in Java 11](#dynamic-compilation-in-java-11)
   - [Introduction](#introduction)
   - [Security](#security)
   - [Few notes about JDK 9](#few-notes-about-jdk-9)
+- [This project](#this-project)
+- [Example](#example)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
