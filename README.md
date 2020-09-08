@@ -15,7 +15,7 @@
 
 ## Introduction
 
-Compiling a Java file on the fly is not so complicated. First, you have to instantiate a new compiler:
+Compiling a Java file on the fly is not so complicated. First, you have to instantiate a new compiler: 
 
 ```java
 JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
