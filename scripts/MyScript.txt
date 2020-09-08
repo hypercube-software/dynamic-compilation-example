@@ -1,0 +1,10 @@
+package com.hypercube.scripts.model;
+
+public class MyScript extends Plugin {
+
+	@Override
+	public void execute() throws Exception {
+		logger.info("Hello world !");
+	}
+
+}
