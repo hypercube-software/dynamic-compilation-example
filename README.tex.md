@@ -1,18 +1,6 @@
 # Dynamic compilation in Java 11
-**Table of content**
 
-[1.1 Introduction](#11-introduction)  
-[1.2 Security](#12-security)  
-[1.3 Few notes about JDK 9](#13-few-notes-about-jdk-9)  
-  
-  
-[2 This project](#2-this-project)  
-[3 Example](#3-example)  
-
-
-
-
-## 1.1 Introduction
+## Introduction
 
 Compiling a Java file on the fly is not so complicated. First, you have to instantiate a new compiler: 
 
@@ -40,7 +28,7 @@ And voila! The compiled class will be available in the file manager.
 Class<?> compiledClass = fileManager.getClassLoader(null).loadClass(className);
 ```
 
-## 1.2 Security
+## Security
 
 Creating a plugin system could cause serious security holes if you run a malicious script. Fortunately the dynamic compilation API in Java allow you to control which class can be used by the script at compile time. This is handled by `ForwardingJavaFileManager::list`, so you have to inherit from this class to make your own file manager.
 
@@ -56,7 +44,7 @@ public abstract class Plugin {
 }
 ```
 
-## 1.3 Few notes about JDK 9
+## Few notes about JDK 9
 
 Since JDK 9, you have now **modules**. So pay attention to the class `javax.tools.StandardLocation`, because there are more possible locations now and you must handle them in the file manager:
 
@@ -85,7 +73,7 @@ JDK 9:
 | `SYSTEM_MODULES`       | Location to search for system modules.             |
 | `UPGRADE_MODULE_PATH`  | Location to search for upgradeable system modules. |
 
-# 2 This project
+# This project
 
 I made the things as simple as possible:
 
@@ -95,7 +83,7 @@ I made the things as simple as possible:
 - `com.hypercube.scripts.PrecompiledJavaFile`: a kind of wrapper used by the compiler to get some .class. We use it for `Plugin.class`
 - `com.hypercube.scripts.model.Plugin`: the base class of any plugin, provides a logger to the plugin.
 
-# 3 Example
+# Example
 
 Script located in the file `scripts/MyScript.txt`:
 
