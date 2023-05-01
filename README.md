@@ -1,16 +1,12 @@
 # Dynamic compilation in Java 11
 **Table of content**
 
-[1.1 Introduction](#11-introduction)  
-[1.2 Security](#12-security)  
-[1.3 Few notes about JDK 9](#13-few-notes-about-jdk-9)  
-  
-  
+[1 Dynamic compilation in Java 11](#dynamic-compilation-in-java-11)  
+&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Introduction](#11-introduction)  
+&nbsp;&nbsp;&nbsp;&nbsp;[1.2 Security](#12-security)  
+&nbsp;&nbsp;&nbsp;&nbsp;[1.3 Few notes about JDK 9](#13-few-notes-about-jdk-9)  
 [2 This project](#2-this-project)  
 [3 Example](#3-example)  
-
-
-
 
 ## 1.1 Introduction
 
